@@ -22,4 +22,5 @@
     * [通过 Fibonacci 数列入门递归](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/tong-guo-fibonacci-shu-lie-ru-men-di-gui.md)
     * [用递归的方式来写二分法](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/yong-di-gui-de-fang-shi-lai-xie-er-fen-fa.md)
     * [内存中的栈空间与堆空间](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/nei-cun-zhong-de-zhan-kong-jian-yu-dui-kong-jian.md)
+    * [什么是递归深度](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/shi-yao-shi-di-gui-shen-du.md)
 
