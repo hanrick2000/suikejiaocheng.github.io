@@ -18,4 +18,7 @@
       * [空间复杂度小练习](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/kong-jian-fu-za-du/kong-jian-fu-za-du-xiao-lian-xi.md)
     * [分解质因数](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/fen-jie-zhi-yin-shu.md)
   * [二分法基本原理](chapter-3-binary-search/er-fen-fa-ji-ben-yuan-li.md)
+  * [用递归的方式实现二分法](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa.md)
+    * [通过 Fibonacci 数列入门递归](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/tong-guo-fibonacci-shu-lie-ru-men-di-gui.md)
+    * [用递归的方式来写二分法](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/yong-di-gui-de-fang-shi-lai-xie-er-fen-fa.md)
 
