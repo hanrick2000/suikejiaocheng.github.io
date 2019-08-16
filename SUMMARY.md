@@ -17,4 +17,5 @@
       * [如何分析空间复杂度](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/kong-jian-fu-za-du/ru-he-fen-xi-kong-jian-fu-za-du.md)
       * [空间复杂度小练习](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/kong-jian-fu-za-du/kong-jian-fu-za-du-xiao-lian-xi.md)
     * [分解质因数](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/fen-jie-zhi-yin-shu.md)
+  * [二分法基本原理](chapter-3-binary-search/er-fen-fa-ji-ben-yuan-li.md)
 
