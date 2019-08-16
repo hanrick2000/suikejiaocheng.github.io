@@ -23,4 +23,9 @@
     * [用递归的方式来写二分法](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/yong-di-gui-de-fang-shi-lai-xie-er-fen-fa.md)
     * [内存中的栈空间与堆空间](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/nei-cun-zhong-de-zhan-kong-jian-yu-dui-kong-jian.md)
     * [什么是递归深度](chapter-3-binary-search/yong-di-gui-de-fang-shi-shi-xian-er-fen-fa/shi-yao-shi-di-gui-shen-du.md)
+  * [通用的二分法模板](chapter-3-binary-search/tong-yong-de-er-fen-fa-mo-ban.md)
+    * [模板代码剖析](chapter-3-binary-search/tong-yong-de-er-fen-fa-mo-ban/mo-ban-dai-ma-pou-xi.md)
+    * [为什么 start &lt; end 容易出现死循环](chapter-3-binary-search/tong-yong-de-er-fen-fa-mo-ban/wei-shi-yao-start-end-rong-yi-chu-xian-si-xun-huan.md)
+  * [第三章课后补充内容](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong.md)
+    * [三步翻转法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/san-bu-fan-zhuan-fa.md)
 
