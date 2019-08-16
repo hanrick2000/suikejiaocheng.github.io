@@ -1,4 +1,4 @@
-## 快速幂算法 
+## 快速幂算法
 
 ### 基本原理
 
@@ -15,5 +15,28 @@
 
 ### 递归版本的快速幂算法
 
+Python:
+
+```py
+def power(x, n):
+    if n == 0:
+        return 1
+    
+    if n % 2 == 0:
+        tmp = power(x, n // 2)
+        return tmp * tmp
+    else:
+        tmp = power(x, n // 2)
+        return tmp * tmp * x
+```
+
+注意:
+
+* 不要重复计算，在计算 $$x^{n/2} * x^{n/2}$$的时候，先计算出 $$x^{n/2}$$，存下来然后返回 $$tmp*tmp$$;
+* n为奇数的时候要记得再乘上一个x。
+
+### 非递归版本
+
+  
 
 
