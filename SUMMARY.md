@@ -33,4 +33,5 @@
     * [快速幂算法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/kuai-su-mi-suan-fa.md)
     * [两个排序数组的中位数](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu.md)
       * [基于 FindKth 的算法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu/ji-yu-findkth-de-suan-fa.md)
+      * [基于中点比较的算法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu/ji-yu-zhong-dian-bi-jiao-de-suan-fa.md)
 
