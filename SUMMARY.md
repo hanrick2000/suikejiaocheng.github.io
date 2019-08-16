@@ -28,4 +28,5 @@
     * [为什么 start &lt; end 容易出现死循环](chapter-3-binary-search/tong-yong-de-er-fen-fa-mo-ban/wei-shi-yao-start-end-rong-yi-chu-xian-si-xun-huan.md)
   * [第三章课后补充内容](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong.md)
     * [三步翻转法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/san-bu-fan-zhuan-fa.md)
+    * [二维矩阵找数问题](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/er-wei-ju-zhen-zhao-shu-wen-ti.md)
 
