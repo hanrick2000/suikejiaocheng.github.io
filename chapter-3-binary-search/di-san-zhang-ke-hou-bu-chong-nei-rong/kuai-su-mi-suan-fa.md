@@ -21,7 +21,7 @@ Python:
 def power(x, n):
     if n == 0:
         return 1
-    
+
     if n % 2 == 0:
         tmp = power(x, n // 2)
         return tmp * tmp
@@ -37,6 +37,29 @@ def power(x, n):
 
 ### 非递归版本
 
-  
+Python:
 
+```py
+def power(x, n):
+    ans = 1
+    base = x
+    while n > 0:
+        if n % 2 == 1:
+            ans *= base
+        base *= base
+        n = n // 2
+    return ans
+```
+
+非递归版本与递归版本原理相同，计算顺序略有不同。
+
+因为递归是从大问题进入，划分子问题然后层层返回再求解大问题。这里要从小问题开始，直接求解大问题。  
+你可以打印出每次循环中base和ans的值，来理清楚其中的算法思路。
+
+递归版本和非递归版本都应该熟练掌握，虽然递归版本更容易掌握和理解，且logn的计算深度也不会导致 Stack Overflow。但是面试官是很有可能为了加大难度让你在用非递归的版本写一遍的。
+
+### 相关练习
+
+[http://www.lintcode.com/problem/fast-power/](http://www.lintcode.com/problem/fast-power/)  
+[http://www.lintcode.com/problem/powx-n/](http://www.lintcode.com/problem/powx-n/)
 
