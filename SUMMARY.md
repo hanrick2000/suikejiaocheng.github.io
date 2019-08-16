@@ -34,4 +34,5 @@
     * [两个排序数组的中位数](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu.md)
       * [基于 FindKth 的算法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu/ji-yu-findkth-de-suan-fa.md)
       * [基于中点比较的算法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu/ji-yu-zhong-dian-bi-jiao-de-suan-fa.md)
+      * [基于二分的算法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/liang-ge-pai-xu-shu-zu-de-zhong-wei-shu/ji-yu-er-fen-de-suan-fa.md)
 
