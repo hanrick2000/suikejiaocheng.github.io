@@ -29,4 +29,5 @@
   * [第三章课后补充内容](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong.md)
     * [三步翻转法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/san-bu-fan-zhuan-fa.md)
     * [二维矩阵找数问题](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/er-wei-ju-zhen-zhao-shu-wen-ti.md)
+    * [辗转相除法](chapter-3-binary-search/di-san-zhang-ke-hou-bu-chong-nei-rong/zhan-zhuan-xiang-chu-fa.md)
 
