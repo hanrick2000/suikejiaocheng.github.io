@@ -83,8 +83,6 @@ A.sort(new MyCmp());
 
 **大家可以对以上各种方法，进行输出调试，也可以修改比较方法，做各种尝试。**
 
-
-
 ## 二、Python实现自定义排序
 
 Python中也有类似的两种实现方法：
@@ -92,8 +90,6 @@ Python中也有类似的两种实现方法：
 ### 1. 实现`__lt__`方法:
 
 以`Interval`区间为例，在定义该类时，重写其中的`__lt__`方法，使得Interval类可以进行大小比较，这样也可实现自定义的排序：
-
-
 
 ```py
 class Interval:
@@ -108,8 +104,6 @@ class Interval:
 ```
 
 这样，在其他地方就可以直接对Interval对象的大小进行比较。完整的测试方法如下：
-
-
 
 ```py
 # Interval类如上
@@ -133,6 +127,23 @@ if __name__ == "__main__":
 
 输出可以自行观察，不再赘述。
 
-  
+
+
+### 2. 定义key函数
+
+可以给sort方法传入一个key函数，表示按照什么标准来对元素进行排序，仍以上面的例子为例:
+
+```py
+# 要传给sort函数的key方法，表示按照interval.left进行排序
+def IntervalKey(interval):
+    return interval.left 
+
+A = []
+A.append(Interval(1, 7))
+A.append(Interval(5, 6))
+A.append(Interval(3, 4))
+A.sort(key=IntervalKey)
+```
+
 
 
