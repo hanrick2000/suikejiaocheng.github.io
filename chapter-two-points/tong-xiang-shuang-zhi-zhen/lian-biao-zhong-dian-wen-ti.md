@@ -1,7 +1,5 @@
 ## 链表中点问题
 
-
-
 ### 问题描述
 
 求一个链表的中点
@@ -37,9 +35,19 @@ LintCode 练习地址：[http://www.lintcode.com/problem/middle-of-linked-list/]
 
 我们可以使用双指针算法来解决链表中点的问题，更具体的，我们可以称之为`快慢指针`算法。该算法如下：
 
+Python:
 
+```py
+slow, fast = head, head.next
+while fast != None and fast.next != None:
+    slow = slow.next
+    fast = fast.next.next
 
+return slow
+```
 
+[完整参考程序](http://www.jiuzhang.com/solution/middle-of-linked-list/)
 
+  
 
 
