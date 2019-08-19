@@ -9,6 +9,21 @@
 
 #### 用 while 循环的写法：
 
+Java:
+
+```java
+public void reverse(char[] s) {
+    int left = 0, right = s.length - 1;
+    while (left < right) {
+        char temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+        left++;
+        right--; 
+    }
+}
+```
+
 Python:
 
 ```py
@@ -27,10 +42,5 @@ def reverse(s):
 
 Python: 无
 
-没有掌握三步翻转法的同学请回到第二章节（二分法）的课后补充内容中进行学习。  
-
-
-
-
-
+没有掌握三步翻转法的同学请回到第二章节（二分法）的课后补充内容中进行学习。
 
