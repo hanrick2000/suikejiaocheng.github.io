@@ -48,4 +48,5 @@
   * [两大经典排序算法](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa.md)
     * [快速排序算法 Quick Sort](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa/kuai-su-pai-xu-suan-fa-quick-sort.md)
     * [归并排序算法 Merge Sort](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa/gui-bing-pai-xu-suan-fa-merge-sort.md)
+    * [快速排序与归并排序的比较](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa/kuai-su-pai-xu-yu-gui-bing-pai-xu-de-bi-jiao.md)
 
