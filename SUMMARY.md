@@ -52,4 +52,5 @@
   * [快速选择算法 Quick Select](chapter-two-points/kuai-su-xuan-zesuan-fa-quick-select.md)
   * [课后补充内容](chapter-two-points/ke-hou-bu-chong-nei-rong.md)
     * [三指针算法](chapter-two-points/ke-hou-bu-chong-nei-rong/san-zhi-zhen-suan-fa.md)
+    * [烙饼排序](chapter-two-points/ke-hou-bu-chong-nei-rong/luo-bing-pai-xu.md)
 
