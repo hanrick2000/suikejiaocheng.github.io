@@ -47,4 +47,5 @@
     * [带环链表问题](chapter-two-points/tong-xiang-shuang-zhi-zhen/dai-huan-lian-biao-wen-ti.md)
   * [两大经典排序算法](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa.md)
     * [快速排序算法 Quick Sort](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa/kuai-su-pai-xu-suan-fa-quick-sort.md)
+    * [归并排序算法 Merge Sort](chapter-two-points/liang-da-jing-dian-pai-xu-suan-fa/gui-bing-pai-xu-suan-fa-merge-sort.md)
 
