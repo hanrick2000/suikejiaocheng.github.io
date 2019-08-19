@@ -44,8 +44,29 @@ class Solution:
         return None
 ```
 
-  
+首先我们对数组进行排序。
 
+1. 用两个指针\(L, R\)从左右开始：
+   * 如果numbers\[L\] + numbers\[R\] == target, 说明找到，返回对应的数。
+   * 如果numbers\[L\] + numbers\[R\] 
+     &lt;
+      target, 此时L指针右移，只有这样才可能让和更大。
+   * 反之使R左移。
+2. L和R相遇还没有找到就说明没有解。
 
+### 两个算法的对比
 
+1. Hash方法使用一个Hashmap结构来记录对应的数字是否出现，以及其下标。时间复杂度为O\(n\)。空间上需要开辟Hashmap来存储, 空间复杂度是O\(n\)。
+
+2. Two pointers方法，基于有序数组的特性，不断移动左右指针，减少不必要的遍历，时间复杂度为O\(nlogn\)O\(nlogn\)， 主要是排序的复杂度。但是在空间上，不需要额外空间，因此额外空间复杂度是O\(1\)O\(1\)
+
+### 参考资料
+
+[Java Arrays.sort\(\) 排序。](http://blog.csdn.net/winddreams/article/details/51577500)  
+[lintcode Two pointers 算法题目汇总](http://blog.csdn.net/luoshengkim/article/details/52175440)
+
+### 在线练习
+
+[http://www.lintcode.com/problem/two-sum/](http://www.lintcode.com/problem/two-sum/)  
+[参考答案](http://www.jiuzhang.com/solution/two-sum/)
 
