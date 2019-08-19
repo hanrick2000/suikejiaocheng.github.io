@@ -59,7 +59,6 @@ public class Main {
 该方法定义一个新的比较类，使其继承自Comparator，并完善其中的compare\(\)方法。在调用时，使用该比较类进行比较。仍以`Interval`为例：
 
 ```java
-
 class Interval { // 注意，这里没有继承自Comparable
     int left, right;
     Interval(int left, int right) {
@@ -84,7 +83,56 @@ A.sort(new MyCmp());
 
 **大家可以对以上各种方法，进行输出调试，也可以修改比较方法，做各种尝试。**
 
-  
+
+
+## 二、Python实现自定义排序
+
+Python中也有类似的两种实现方法：
+
+### 1. 实现`__lt__`方法:
+
+以`Interval`区间为例，在定义该类时，重写其中的`__lt__`方法，使得Interval类可以进行大小比较，这样也可实现自定义的排序：
+
+
+
+```py
+class Interval:
+    def __init__(self, left, right):
+        self.left = left
+        self.right = right
+
+    # 以下为重写的__lt__方法
+    def __lt__(self, other):
+        # 当两个Interval比较大小时，直接比较它们的left属性
+        return self.left < other.left
+```
+
+这样，在其他地方就可以直接对Interval对象的大小进行比较。完整的测试方法如下：
+
+
+
+```py
+# Interval类如上
+
+if __name__ == "__main__":
+    A = []
+    A.append(Interval(1, 7))
+    A.append(Interval(5, 6))
+    A.append(Interval(3, 4))
+    print("Before sort:")
+    for i in A:
+        print("({},{})".format(i.left, i.right))
+
+    # 由于定义了__lt__，方法，此处可以直接调用sort方法进行升序排序
+    A.sort()
+
+    print("After sort:")
+    for i in A:
+        print("({},{})".format(i.left, i.right))
+```
+
+输出可以自行观察，不再赘述。
+
   
 
 
