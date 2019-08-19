@@ -1,7 +1,5 @@
 ## 两数之差问题
 
-
-
 ### 问题描述
 
 在一个数组中，求出满足两个数之差等于 target 的那一对数。返回他们的下标。
@@ -22,7 +20,45 @@ LintCode 练习地址：
 
 可以知道，由于 j 的挪动不会从头开始，而是一直递增的往下挪动，那么这个时候，i 和 j 之间的两个循环的就不是累乘关系而是叠加关系。
 
+### 核心代码
+
+  
+Python:
+
+```py
+nums.sort()
+target = abs(target)
+
+j = 1
+for i in range(len(nums)):
+    while j < len(nums) and nums[j]-nums[i] < target:
+        j += 1
+    if nums[j]-nums[i] == target:
+        # 找到答案
+```
+
+[完整参考代码](http://www.jiuzhang.com/solution/two-sum-difference-equals-to-target)
+
+### 相似问题
+
+### 相似问题
+
+G家的一个相似问题：找到一个数组中有多少对二元组，他们的平方差 &lt; target（target 为正整数）。  
+我们可以用类似放的方法来解决，首先将数组的每个数进行平方，那么问题就变成了有多少对两数之差 &lt; target。  
+然后走一遍上面的这个流程，当找到一对 nums\[j\] - nums\[i\] &gt;= target 的时候，就相当于一口气发现了：
+
+```
+nums[i + 1] - nums[i]
+nums[i + 2] - nums[i]
+...
+nums[j - 1] - nums[i]
+
+```
+
+一共`j - i - 1`对满足要求的二元组。累加这个计数，然后挪动 i 的位置 +1 即可。
 
 
+
+  
 
 
