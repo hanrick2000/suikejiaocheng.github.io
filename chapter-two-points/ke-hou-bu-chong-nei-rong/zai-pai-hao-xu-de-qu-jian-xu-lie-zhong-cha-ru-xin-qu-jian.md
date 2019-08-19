@@ -25,5 +25,33 @@ A：有！在查找左端新区见待插位置时，可以采用二分查找。�
 
 ### 参考代码
 
+Python版本：
 
+```py
+class Solution:
+      # @param intervals: Sorted interval list.
+      # @param newInterval: new interval.
+      # @return: A new interval list.
+      def insert(self, intervals, new_interval):
+          answer = []
+
+          index = 0
+          while index < len(intervals) and intervals[index].start < new_interval.start:
+              index += 1
+          intervals.insert(index, new_interval)
+
+          last = None
+          for item in intervals:
+              if last == None or last.end < item.start:
+                  answer.append(item)
+                  last = item
+              else:
+                  last.end = max(last.end, item.end)
+          return answer
+```
+
+### 相关练习
+
+[http://www.lintcode.com/problem/intersection-of-arrays/](http://www.lintcode.com/problem/intersection-of-arrays/)  
+[http://www.lintcode.com/problem/merge-intervals/](http://www.lintcode.com/problem/merge-intervals/)
 
