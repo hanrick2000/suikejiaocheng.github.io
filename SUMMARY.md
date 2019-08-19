@@ -53,4 +53,5 @@
   * [课后补充内容](chapter-two-points/ke-hou-bu-chong-nei-rong.md)
     * [三指针算法](chapter-two-points/ke-hou-bu-chong-nei-rong/san-zhi-zhen-suan-fa.md)
     * [烙饼排序](chapter-two-points/ke-hou-bu-chong-nei-rong/luo-bing-pai-xu.md)
+    * [如何写 Comparator 来对区间进行排序？](chapter-two-points/ke-hou-bu-chong-nei-rong/ru-he-xie-comparator-lai-dui-qu-jian-jin-xing-pai-xu-ff1f.md)
 
