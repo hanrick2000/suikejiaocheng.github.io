@@ -52,5 +52,39 @@ public class Main {
 }
 ```
 
+输出可以自行观察，不再赘述。
+
+### 2.定义比较类：
+
+该方法定义一个新的比较类，使其继承自Comparator，并完善其中的compare\(\)方法。在调用时，使用该比较类进行比较。仍以`Interval`为例：
+
+```java
+
+class Interval { // 注意，这里没有继承自Comparable
+    int left, right;
+    Interval(int left, int right) {
+        this.left = left;
+        this.right = right;
+    }
+}
+
+class MyCmp implements Comparator<Interval> {
+    @Override
+    public int compare(Interval o1, Interval o2) {
+        return o1.left - o2.left;
+    }
+}
+```
+
+要对`List<Interval> A`进行排序时，调用如下方法，填入一个比较类的对象即可：
+
+```java
+A.sort(new MyCmp());
+```
+
+**大家可以对以上各种方法，进行输出调试，也可以修改比较方法，做各种尝试。**
+
+  
+  
 
 
