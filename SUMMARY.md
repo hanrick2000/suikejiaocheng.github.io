@@ -40,4 +40,5 @@
     * [判断回文串](chapter-two-points/xiang-xiang-shuang-zhi-zhen/pan-duan-hui-wen-chuan.md)
     * [双指针的鼻祖：两数之和](chapter-two-points/xiang-xiang-shuang-zhi-zhen/shuang-zhi-zhen-de-bi-zu-ff1a-liang-shu-zhi-he.md)
   * [同向双指针](chapter-two-points/tong-xiang-shuang-zhi-zhen.md)
+    * [数组去重问题](chapter-two-points/tong-xiang-shuang-zhi-zhen/shu-zu-qu-zhong-wen-ti.md)
 
