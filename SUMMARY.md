@@ -38,4 +38,5 @@
 * [Chapter 5 Two Points](chapter-two-points.md)
   * [相向双指针](chapter-two-points/xiang-xiang-shuang-zhi-zhen.md)
     * [判断回文串](chapter-two-points/xiang-xiang-shuang-zhi-zhen/pan-duan-hui-wen-chuan.md)
+    * [双指针的鼻祖：两数之和](chapter-two-points/xiang-xiang-shuang-zhi-zhen/shuang-zhi-zhen-de-bi-zu-ff1a-liang-shu-zhi-he.md)
 
