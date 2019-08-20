@@ -2,7 +2,7 @@
 
 ### 问题描述
 
-求出一个数组每kk个连续整数的和的数组。如 nums =`[1,2,3,4]`, k =`2`的话，window sum 数组为`[3,5,7]`。  
+求出一个数组每k个连续整数的和的数组。如 nums =`[1,2,3,4]`, k =`2`的话，window sum 数组为`[3,5,7]`。  
 [http://www.lintcode.com/problem/window-sum/](http://www.lintcode.com/problem/window-sum/)
 
 ### 问题分析
