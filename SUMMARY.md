@@ -62,4 +62,5 @@
     * [如何定义一个图的数据结构？](chapter-4-bfs/tu-shang-de-kuan-du-you-xian-sou-suo/ru-he-ding-yi-yi-ge-tu-de-shu-ju-jie-gou-ff1f.md)
       * [邻接矩阵](chapter-4-bfs/tu-shang-de-kuan-du-you-xian-sou-suo/ru-he-ding-yi-yi-ge-tu-de-shu-ju-jie-gou-ff1f/lin-jie-ju-zhen.md)
       * [邻接表](chapter-4-bfs/tu-shang-de-kuan-du-you-xian-sou-suo/ru-he-ding-yi-yi-ge-tu-de-shu-ju-jie-gou-ff1f/lin-jie-biao.md)
+  * [拓扑排序](chapter-4-bfs/tuo-pu-pai-xu.md)
 
