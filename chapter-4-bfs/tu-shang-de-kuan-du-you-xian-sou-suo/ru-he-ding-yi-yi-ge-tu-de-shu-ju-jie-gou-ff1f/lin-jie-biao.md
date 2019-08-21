@@ -30,9 +30,23 @@ def DirectedGraphNode:
 
 其中 neighbors 表示和该点连通的点有哪些。
 
-
-
 #### 使用 Map 和 Set（面试时）
 
 也可以使用 HashMap 和 HashSet 搭配的方式来存储邻接表
+
+Python:
+
+```py
+# 假设nodes为节点标签的列表:
+
+# 使用了Python中的dictionary comprehension语法
+adjacency_list = {x:set() for x in nodes}
+
+# 另一种写法
+adjacency_list = {}
+for x in nodes:
+    adjacency_list[x] = set()
+```
+
+
 
