@@ -9,7 +9,6 @@
   [1],
   [1]
 ]
-
 ```
 
 这个图表示 0 和 1 之间有连边，1 和 2 之间有连边，1 和 3 之间有连边。即每个点上存储自己有哪些邻居（有哪些连通的点）。  
@@ -26,12 +25,14 @@ def DirectedGraphNode:
     def __init__(self, label):
         self.label = label
         self.neighbors = []  # a list of DirectedGraphNode's
-		...
+        ...
 ```
 
 其中 neighbors 表示和该点连通的点有哪些。
 
 
 
+#### 使用 Map 和 Set（面试时）
 
+也可以使用 HashMap 和 HashSet 搭配的方式来存储邻接表
 
