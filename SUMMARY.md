@@ -55,4 +55,5 @@
     * [烙饼排序](chapter-two-points/ke-hou-bu-chong-nei-rong/luo-bing-pai-xu.md)
     * [如何写 Comparator 来对区间进行排序？](chapter-two-points/ke-hou-bu-chong-nei-rong/ru-he-xie-comparator-lai-dui-qu-jian-jin-xing-pai-xu-ff1f.md)
     * [在排好序的区间序列中插入新区间](chapter-two-points/ke-hou-bu-chong-nei-rong/zai-pai-hao-xu-de-qu-jian-xu-lie-zhong-cha-ru-xin-qu-jian.md)
+* Chapter 4 BFS
 
