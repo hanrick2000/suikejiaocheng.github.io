@@ -15,9 +15,11 @@ dummy->head->node->node->node...
 
 在 BFS 中，我们主要用 dummy node 来做占位符。即，在队列中每一层节点的结尾，都放一个`null`（or None in Python，nil in Ruby），来表示这一层的遍历结束了。这里 dummy node 就是一个 null。
 
-  
-  
+Python:
 
+```
+
+```
 
 
 
