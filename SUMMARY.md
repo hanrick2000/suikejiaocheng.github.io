@@ -57,4 +57,5 @@
 * [Chapter 4 BFS](chapter-4-bfs.md)
   * [什么是队列（Queue）](chapter-4-bfs/shi-yao-shi-dui-lie-ff08-queue.md)
   * [什么时候使用宽搜](chapter-4-bfs/shi-yao-shi-hou-shi-yong-kuan-sou.md)
+  * [图上的宽度优先搜索](chapter-4-bfs/tu-shang-de-kuan-du-you-xian-sou-suo.md)
 
