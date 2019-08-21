@@ -61,9 +61,30 @@ def doubleBFS(start, end):
                 else:
                     endVisited.add(neighbor)
                     endQueue.append(neighbor)
-    
+
     return -1
 ```
 
+
+
+
+
+### 学习建议
+
+Bidirectional BFS 掌握起来并不是很难，算法实现上稍微复杂了一点（代码量相对单向 BFS 翻倍），掌握这个算法一方面加深对普通 BFS 的熟练程度，另外一方面，基本上写一次就能记住，如果在面试中被问到了如何优化 BFS 的问题，Bidirectional BFS 几乎就是标准答案了。
+
+### 参考资料
+
+[https://www.geeksforgeeks.org/bidirectional-search](https://www.geeksforgeeks.org/bidirectional-search)
+
+### 应用例题
+
+[Shortest Path in Undirected Graph](http://www.lintcode.com/zh-cn/problem/shortest-path-in-undirected-graph/)  
+[Knight Shortest Path](http://www.lintcode.com/zh-cn/problem/knight-shortest-path/)  
+[Knight Shortest Path II](http://www.lintcode.com/en/problem/knight-shortest-path-ii/)
+
+我已经读完本章了
+
+  
 
 
