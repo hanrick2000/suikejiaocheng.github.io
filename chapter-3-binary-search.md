@@ -1,4 +1,4 @@
-## 第三章 你以为很简单的二分法
+## 第二章 你以为很简单的二分法
 
 二分法\(binary search\)是面试中常见的算法。如果你的学校有算法课，那么你可能已经学习过二分这个算法了。
 
@@ -35,8 +35,5 @@
 #### LintCode 上的二分法题目
 
 可以看到，二分的题目非常的多  
-[http://www.lintcode.com/tag/binary-search](http://www.lintcode.com/tag/binary-search)  
-
-
-
+[http://www.lintcode.com/tag/binary-search](http://www.lintcode.com/tag/binary-search)
 
