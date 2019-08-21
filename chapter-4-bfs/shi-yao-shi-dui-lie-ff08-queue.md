@@ -32,3 +32,34 @@
 
 下面利用Java的`ArrayList`和一个头指针实现一个简单的队列。（注意：为了将重点放在实现队列上，做了适当简化。该队列仅支持整数类型，若想实现泛型，可用反射机制和object对象传参；此外，可多做安全检查并抛出异常）
 
+Python:
+
+```py
+class MyQueue:
+    # 队列初始化
+    def __init__(self):
+        self.elements = []  # 用list存储队列元素
+        self.pointer = 0    # 队头位置
+
+    # 获取队列中元素个数
+    def size(self):
+        return len(self.elements)-pointer
+    
+    # 判断队列是否为空
+    def empty(self):
+        return self.size() == 0
+
+    # 在队尾添加一个元素
+    def add(self, e):
+        self.elements.append(e)
+
+    # 弹出队首元素，如果为空则返回None
+    def poll(self):
+        if self.empty():
+            return None
+        pointer += 1
+        return self.elements[pointer-1]
+```
+
+
+
