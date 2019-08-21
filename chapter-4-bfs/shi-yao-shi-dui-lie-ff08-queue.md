@@ -13,28 +13,13 @@
 
 * Java常用的队列包括如下几种：
 
-  `ArrayDeque`  
-  ：数组存储。实现Deque接口，而Deque是Queue接口的子接口，代表  
-  **双端队列**  
-  （double-ended queue）。
+  `ArrayDeque`：数组存储。实现Deque接口，而Deque是Queue接口的子接口，代表**双端队列**（double-ended queue）。
 
-  `LinkedList`  
-  ：链表存储。实现List接口和Duque接口，不仅可做队列，还可以作为双端队列，或栈（stack）来使用。
+  `LinkedList`：链表存储。实现List接口和Duque接口，不仅可做队列，还可以作为双端队列，或栈（stack）来使用。
 
-* C++中，使用
-  &lt;
-  queue
-  &gt;
-  中的
-  `queue`
-  模板类，模板需两个参数，元素类型和容器类型，元素类型必要，而容器类型可选，默认
-  `deque`
-  ，可改用
-  `list`
-  （链表）类型。
-* Python中，使用
-  `collections.deque`
-  ，双端队列。
+* C++中，使用&lt;queue&gt;中的`queue`模板类，模板需两个参数，元素类型和容器类型，元素类型必要，而容器类型可选，默认`deque`，可改用`list`（链表）类型。
+
+* Python中，使用`collections.deque`，双端队列。
 
 ### 如何自己用数组实现一个队列？
 
