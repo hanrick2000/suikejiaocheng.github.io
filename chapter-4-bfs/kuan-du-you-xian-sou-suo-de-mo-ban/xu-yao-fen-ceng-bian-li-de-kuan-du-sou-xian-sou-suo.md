@@ -20,5 +20,9 @@ while len(queue):
                 queue.append(neighbor)
 ```
 
+上述代码中：
+
+* size = queue.size\(\) 是一个必须的步骤。如果在 for 循环中使用`for (int i = 0; i < queue.size(); i++)`会出错，因为 queue.size\(\) 是一个动态变化的值。所以必须先把当前层一共有多少个节点存在局部变量 size 中，才不会把下一层的节点也在当前层进行扩展。
+
 
 
