@@ -67,4 +67,5 @@
     * [参考程序](chapter-4-bfs/tuo-pu-pai-xu/can-kao-cheng-xu.md)
   * [宽度优先搜索的模板](chapter-4-bfs/kuan-du-you-xian-sou-suo-de-mo-ban.md)
     * [无需分层遍历的宽度优先搜索](chapter-4-bfs/kuan-du-you-xian-sou-suo-de-mo-ban/wu-xu-fen-ceng-bian-li-de-kuan-du-you-xian-sou-suo.md)
+    * [需要分层遍历的宽度搜先搜索](chapter-4-bfs/kuan-du-you-xian-sou-suo-de-mo-ban/xu-yao-fen-ceng-bian-li-de-kuan-du-sou-xian-sou-suo.md)
 
