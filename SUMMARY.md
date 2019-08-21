@@ -70,4 +70,5 @@
     * [需要分层遍历的宽度搜先搜索](chapter-4-bfs/kuan-du-you-xian-sou-suo-de-mo-ban/xu-yao-fen-ceng-bian-li-de-kuan-du-sou-xian-sou-suo.md)
   * [课后补充内容](chapter-4-bfs/ke-hou-bu-chong-nei-rong.md)
     * [使用两个队列的BFS实现](chapter-4-bfs/ke-hou-bu-chong-nei-rong/shi-yong-liang-ge-dui-lie-de-bfs-shi-xian.md)
+    * [使用 Dummy Node 进行 BFS](chapter-4-bfs/ke-hou-bu-chong-nei-rong/shi-yong-dummy-node-jin-xing-bfs.md)
 
