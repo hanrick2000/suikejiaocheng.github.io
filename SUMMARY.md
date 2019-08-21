@@ -63,4 +63,5 @@
       * [邻接矩阵](chapter-4-bfs/tu-shang-de-kuan-du-you-xian-sou-suo/ru-he-ding-yi-yi-ge-tu-de-shu-ju-jie-gou-ff1f/lin-jie-ju-zhen.md)
       * [邻接表](chapter-4-bfs/tu-shang-de-kuan-du-you-xian-sou-suo/ru-he-ding-yi-yi-ge-tu-de-shu-ju-jie-gou-ff1f/lin-jie-biao.md)
   * [拓扑排序](chapter-4-bfs/tuo-pu-pai-xu.md)
+    * [算法描述](chapter-4-bfs/tuo-pu-pai-xu/suan-fa-miao-shu.md)
 
