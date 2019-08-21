@@ -44,7 +44,7 @@ class MyQueue:
     # 获取队列中元素个数
     def size(self):
         return len(self.elements)-pointer
-    
+
     # 判断队列是否为空
     def empty(self):
         return self.size() == 0
@@ -61,5 +61,15 @@ class MyQueue:
         return self.elements[pointer-1]
 ```
 
+### 队列在工业界的应用
 
+队列可用于实现消息队列（message queue），以完成异步（asynchronous）任务。
+
+“消息”是计算机间传送的数据，可以只包含文本；也可复杂到包含嵌入对象。当消息“生产”和“消费”的速度不一致时，就需要消息队列，临时保存那些已经发送而并未接收的消息。例如集体打包调度，服务器繁忙时的任务处理，事件驱动等等。
+
+常用的消息队列实现包括[RabbitMQ](http://www.rabbitmq.com/)，[ZeroMQ](http://zeromq.org/)等等。
+
+更多消息队列的参考资料：  
+[为什么需要消息队列，及使用消息队列的好处？](https://blog.csdn.net/qq_39470733/article/details/80576013)  
+[RabbitMQ的应用场景以及基本原理介绍](http://blog.csdn.net/whoamiyang/article/details/54954780)
 
