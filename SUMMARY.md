@@ -66,4 +66,5 @@
     * [算法描述](chapter-4-bfs/tuo-pu-pai-xu/suan-fa-miao-shu.md)
     * [参考程序](chapter-4-bfs/tuo-pu-pai-xu/can-kao-cheng-xu.md)
   * [宽度优先搜索的模板](chapter-4-bfs/kuan-du-you-xian-sou-suo-de-mo-ban.md)
+    * [无需分层遍历的宽度优先搜索](chapter-4-bfs/kuan-du-you-xian-sou-suo-de-mo-ban/wu-xu-fen-ceng-bian-li-de-kuan-du-you-xian-sou-suo.md)
 
