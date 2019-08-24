@@ -15,20 +15,14 @@
 Python:
 
 ```py
-def
-maxDepth
-(root)
-:
+def maxDepth(root):
 ```
 
 代表`以 root 开头的子树的最大深度是多少`。  
 Python:
 
 ```py
-def
-preorder
-(root, result)
-:
+def preorder(root, result):
 ```
 
 代表`将 root 开头的子树的前序遍历放到 result 里面`
@@ -44,10 +38,7 @@ Python:
 ```py
 leftDepth = maxDepth(root.left)
 rightDepth = maxDepth(root.right)
-
-return
- max(leftDepth, rightDepth) + 
-1
+return max(leftDepth, rightDepth) + 1
 ```
 
 整棵树的最大深度，可以拆解为先计算左右子树深度，然后在左右子树深度中找到最大值+1来解决。
@@ -58,7 +49,6 @@ Python:
 result.append(root)
 preorder(root.left, result)
 perorder(root.right, result)
-
 ```
 
 一棵树的前序遍历可以拆解为3个部分：
@@ -83,28 +73,18 @@ Python:
 
 ```py
 # 二叉树的最大深度
-if
-not
- root:
-    
-return
-0
+if not root:
+    return 0
 ```
 
-一棵空的二叉树，可以认为是一个高度为`0`的二叉树。  
-
+一棵空的二叉树，可以认为是一个高度为`0`的二叉树。
 
 Python:
 
 ```py
-if
-not
- root:
-    
-return
+if not root:
+    return
 ```
 
 一棵空的二叉树，自然不用往 result 里放任何的东西。
-
-
 
