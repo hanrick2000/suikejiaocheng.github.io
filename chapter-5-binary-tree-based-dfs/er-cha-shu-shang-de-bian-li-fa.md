@@ -18,9 +18,38 @@
 首先访问根结点，然后遍历左子树，最后遍历右子树。**遍历左、右子树时，仍按先序遍历**。若二叉树为空则返回。
 
 该过程可简记为**根左右**，注意该过程是**递归的**。如图先序遍历结果是：**ABDECF**。  
-![](http://media.jiuzhang.com/markdown/images/3/15/d77b07ce-27f7-11e8-9f14-0242ac110002.jpg "图片")  
+![](http://media.jiuzhang.com/markdown/images/3/15/d77b07ce-27f7-11e8-9f14-0242ac110002.jpg "图片")
 
+核心代码：
 
-核心代码：  
+Python:
 
+```py
+def traverse(root, result):
+    if not root:
+        return
+    traverse(root.left, result)
+    result.append(root.val) # 注意访问根节点放到了遍历左子树的后面
+    traverse(root.right, result)
+```
+
+  
+[相关练习](http://www.lintcode.com/problem/binary-tree-inorder-traversal/)及[完整答案](http://www.jiuzhang.com/solution/binary-tree-inorder-traversal/)。
+
+#### 后序遍历（又叫后根遍历）
+
+首先遍历左子树，然后遍历右子树，最后访问根结点。**遍历左、右子树时，仍按后序遍历**。若二叉树为空则返回。简记为**左右根**。  
+上图后序遍历结果是：**DEBFCA**。  
+Python:
+
+```py
+def traverse(root, result):
+    if not root:
+        return
+    traverse(root.left, result)
+    traverse(root.right, result)
+    result.append(root.val) # 注意访问根节点放到了最后
+```
+
+[相关练习](http://www.lintcode.com/problem/binary-tree-postorder-traversal/)及[完整答案](http://www.jiuzhang.com/solution/binary-tree-postorder-traversal/)。
 
