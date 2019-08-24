@@ -88,4 +88,6 @@
   * [使用 ResultType 返回多个值](chapter-5-binary-tree-based-dfs/shi-yong-resulttype-fan-hui-duo-ge-zhi.md)
   * [什么是二叉搜索树](chapter-5-binary-tree-based-dfs/shi-yao-shi-er-cha-sou-suo-shu.md)
   * [什么是平衡二叉搜索树](chapter-5-binary-tree-based-dfs/shi-yao-shi-ping-heng-er-cha-sou-suo-shu.md)
+  * [第五章课后补充内容](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong.md)
+    * [用 Morris 算法实现 O\(1\) 额外空间遍历二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/yong-morris-suan-fa-shi-xian-o-1-e-wai-kong-jian-bian-li-er-cha-shu.md)
 
