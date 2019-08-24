@@ -33,7 +33,6 @@ def traverse(root, result):
     traverse(root.right, result)
 ```
 
-  
 [相关练习](http://www.lintcode.com/problem/binary-tree-inorder-traversal/)及[完整答案](http://www.jiuzhang.com/solution/binary-tree-inorder-traversal/)。
 
 #### 后序遍历（又叫后根遍历）
@@ -52,4 +51,9 @@ def traverse(root, result):
 ```
 
 [相关练习](http://www.lintcode.com/problem/binary-tree-postorder-traversal/)及[完整答案](http://www.jiuzhang.com/solution/binary-tree-postorder-traversal/)。
+
+### 一些有趣的题目：
+
+[http://www.lintcode.com/problem/construct-binary-tree-from-inorder-and-postorder-traversal/](http://www.lintcode.com/problem/construct-binary-tree-from-inorder-and-postorder-traversal/)  
+[http://www.lintcode.com/problem/construct-binary-tree-from-preorder-and-inorder-traversal/](http://www.lintcode.com/problem/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
