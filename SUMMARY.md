@@ -79,4 +79,5 @@
     * [二叉树的最大深度](chapter-5-binary-tree-based-dfs/bian-li-fa-he-fen-zhi-fa-shi-zhan/er-cha-shu-de-zui-da-shen-du.md)
     * [判断平衡二叉树](chapter-5-binary-tree-based-dfs/bian-li-fa-he-fen-zhi-fa-shi-zhan/pan-duan-ping-heng-er-cha-shu.md)
     * [判断二叉搜索树](chapter-5-binary-tree-based-dfs/bian-li-fa-he-fen-zhi-fa-shi-zhan/pan-duan-er-cha-sou-suo-shu.md)
+  * [递归，分治法，遍历法的联系与区别](chapter-5-binary-tree-based-dfs/di-gui-ff0c-fen-zhi-fa-ff0c-bian-li-fa-de-lian-xi-yu-qu-bie.md)
 
