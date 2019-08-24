@@ -75,4 +75,6 @@
 * [Chapter 5 Binary Tree](chapter-5-binary-tree-based-dfs.md)
   * [二叉树上的遍历法](chapter-5-binary-tree-based-dfs/er-cha-shu-shang-de-bian-li-fa.md)
   * [二叉树上的分治法](chapter-5-binary-tree-based-dfs/er-cha-shu-shang-de-fen-zhi-fa.md)
+  * [遍历法和分治法实战](chapter-5-binary-tree-based-dfs/bian-li-fa-he-fen-zhi-fa-shi-zhan.md)
+    * [二叉树的最大深度](chapter-5-binary-tree-based-dfs/bian-li-fa-he-fen-zhi-fa-shi-zhan/er-cha-shu-de-zui-da-shen-du.md)
 
