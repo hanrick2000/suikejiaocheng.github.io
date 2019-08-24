@@ -86,4 +86,5 @@
     * [递归的拆解](chapter-5-binary-tree-based-dfs/di-gui-san-yao-su/di-gui-de-chai-jie.md)
     * [递归的出口](chapter-5-binary-tree-based-dfs/di-gui-san-yao-su/di-gui-de-chu-kou.md)
   * [使用 ResultType 返回多个值](chapter-5-binary-tree-based-dfs/shi-yong-resulttype-fan-hui-duo-ge-zhi.md)
+  * [什么是二叉搜索树](chapter-5-binary-tree-based-dfs/shi-yao-shi-er-cha-sou-suo-shu.md)
 
