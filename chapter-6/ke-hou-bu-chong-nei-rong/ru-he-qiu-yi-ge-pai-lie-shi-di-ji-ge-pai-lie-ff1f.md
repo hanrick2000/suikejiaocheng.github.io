@@ -40,10 +40,9 @@ class Solution:
         return result + 1
 ```
 
-**Q：为了找寻每个元素右侧有多少元素比自己小，用了 **$$O(n^2)$$$$的时间，能不能更快些？  
-A：可以做到$$
+**Q：为了找寻每个元素右侧有多少元素比自己小，用了 **$$O(n^2)$$$$$$的时间，能不能更快些？  
 
-A: $$O\(nlogn\)$$！但是很复杂，这是另外一个问题了，可以使用BST，归并排序或者线段树，详见[http://www.lintcode.com/zh-cn/problem/count-of-smaller-number-before-itself/](http://www.lintcode.com/zh-cn/problem/count-of-smaller-number-before-itself/)
+A：可以做到$$O(nlogn)$$ ！但是很复杂，这是另外一个问题了，可以使用BST，归并排序或者线段树，详见[http://www.lintcode.com/zh-cn/problem/count-of-smaller-number-before-itself/](http://www.lintcode.com/zh-cn/problem/count-of-smaller-number-before-itself/)
 
 **Q：元素有重复怎么办？**  
 A：好问题！元素有重复，情况会复杂的多。因为这会影响`A[i]`右侧元素的排列数，此时的排列数计算方法为**总元素数的阶乘，除以各元素值个数的阶乘**，例如`[1,1,1,2,2,3]`，排列数为$$6!\div(3!\times2!\times1!)6!÷(3!×2!×1!)$$。  
