@@ -92,4 +92,5 @@
     * [用 Morris 算法实现 O\(1\) 额外空间遍历二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/yong-morris-suan-fa-shi-xian-o-1-e-wai-kong-jian-bian-li-er-cha-shu.md)
     * [非递归的方式实现二叉树遍历](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/fei-di-gui-de-fang-shi-shi-xian-er-cha-shu-bian-li.md)
     * [BST 的增删查改](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai.md)
+      * [平衡排序二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai/ping-heng-pai-xu-er-cha-shu.md)
 
