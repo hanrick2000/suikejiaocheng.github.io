@@ -31,7 +31,7 @@ Python:
 
 ### Java中的[TreeSet](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)/[TreeMap](https://docs.oracle.com/javase/7/docs/api/java/util/TreeMap.html)
 
-TreeSet / TreeMap 是底层运用了[红黑树](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)的数据结构
+TreeSet / TreeMap 是底层运用了[红黑树](https://zh.wikipedia.org/wiki/红黑树)的数据结构
 
 #### 对比 HashSet / HashMap
 
@@ -40,156 +40,27 @@ TreeSet / TreeMap 是底层运用了[红黑树](https://zh.wikipedia.org/wiki/%E
 * TreeSet / TreeMap 还提供了类似[lowerBound](http://www.cplusplus.com/reference/algorithm/lower_bound/)和[upperBound](http://www.cplusplus.com/reference/algorithm/upper_bound/)这两个其他数据结构没有的方法
   * 对于 TreeSet, 实现上述两个方法的方法为：
     * **lowerBound**
-      * **public E lower\(E e\)**
-        --
-        &gt;
-         返回set中
-        **严格小于**
-        给出元素的
-        **最大元素**
-        ，如果没有满足条件的元素则返回
-        **null**
-        。
-      * **public E floor\(E e\)**
-        --
-        &gt;
-         返回set中
-        **不大于**
-        给出元素的
-        **最大元素**
-        ，如果没有满足条件的元素则返回
-        **null**
-        。
+      * **public E lower\(E e\)--**&gt;返回set中**严格小于**给出元素的**最大元素**，如果没有满足条件的元素则返回**null**。
+
+      * **public E floor\(E e\)--**&gt;返回set中**不大于**给出元素的**最大元素**，如果没有满足条件的元素则返回**null**。
     * **upperBound**
-      * **public E higher\(E e\)**
-        --
-        &gt;
-         返回set中
-        **严格大于**
-        给出元素的
-        **最小元素**
-        ，如果没有满足条件的元素则返回
-        **null**
-        。
-      * **public E ceiling\(E e\)**
-        --
-        &gt;
-         返回set中
-        **不小于**
-        给出元素的
-        **最小元素**
-        ，如果没有满足条件的元素则返回
-        **null**
-        。
+      * **public E higher\(E e\)--**&gt; 返回set中**严格大于**给出元素的**最小元素**，如果没有满足条件的元素则返回**null**。
+
+      * **public E ceiling\(E e\)--**&gt;返回set中**不小于**给出元素的**最小元素**，如果没有满足条件的元素则返回**null**。
   * 对于 TreeMap, 实现上述两个方法的方法为：
     * **lowerBound**
-      * **public Map.Entry**
-        **&lt;**
-        **K,V**
-        **&gt;**
-        ** lowerEntry\(K key\)**
-        --
-        &gt;
-         返回map中
-        **严格小于**
-        给出的key值的
-        **最大key**
-        对应的
-        **key-value对**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-      * **public K lowerKey\(K key\)**
-        --
-        &gt;
-         返回map中
-        **严格小于**
-        给出的key值的
-        **最大key**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-      * **public Map.Entry**
-        **&lt;**
-        **K,V**
-        **&gt;**
-        ** floorEntry\(K key\)**
-        --
-        &gt;
-         返回map中
-        **不大于**
-        给出的key值的
-        **最大key**
-        对应的
-        **key-value对**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-      * **public K floorKey\(K key\)**
-        --
-        &gt;
-         返回map中
-        **不大于**
-        给出的key值的
-        **最大key**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
+      * **public Map.Entry&lt;K,V&gt; lowerEntry\(K key\)--**&gt; 返回map中**严格小于**给出的key值的**最大key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
+      * **public K lowerKey\(K key\)--**&gt; 返回map中**严格小于**给出的key值的**最大key**，如果没有满足条件的key则返回**null**。
+
+      * **public Map.Entry&lt;K,V&gt; floorEntry\(K key\)--**&gt; 返回map中**不大于**给出的key值的**最大key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
+      * **public K floorKey\(K key\)--**&gt; 返回map中**不大于**给出的key值的**最大key**，如果没有满足条件的key则返回**null**。
     * **upperBound**
-      * **public Map.Entry**
-        **&lt;**
-        **K,V**
-        **&gt;**
-        ** higherEntry\(K key\)**
-        --
-        &gt;
-         返回map中
-        **严格大于**
-        给出的key值的
-        **最小key**
-        对应的
-        **key-value对**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-      * **public K higherKey\(K key\)**
-        --
-        &gt;
-         返回map中
-        **严格大于**
-        给出的key值的
-        **最小key**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-      * **public Map.Entry**
-        **&lt;**
-        **K,V**
-        **&gt;**
-        ** ceilingEntry\(K key\)**
-        --
-        &gt;
-         返回map中
-        **不小于**
-        给出的key值的
-        **最小key**
-        对应的
-        **key-value对**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-      * **public K ceilingKey\(K key\)**
-        --
-        &gt;
-         返回map中
-        **不小于**
-        给出的key值的
-        **最小key**
-        ，如果没有满足条件的key则返回
-        **null**
-        。
-  * lowerBound 与 upperBound 均为二分查找\(因此要求有序\)，时间复杂度为
-    **O\(logn\)**
+      * **public Map.Entry&lt;K,V&gt; higherEntry\(K key\)--**&gt; 返回map中**严格大于**给出的key值的**最小key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
+      * **public K higherKey\(K key\)--**&gt; 返回map中**严格大于**给出的key值的**最小key**，如果没有满足条件的key则返回**null**。
+
+      * **public Map.Entry&lt;K,V&gt; ceilingEntry\(K key\)--**&gt; 返回map中**不小于**给出的key值的**最小key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
+      * **public K ceilingKey\(K key\)--**&gt; 返回map中**不小于**给出的key值的**最小key**，如果没有满足条件的key则返回**null**。
+  * lowerBound 与 upperBound 均为二分查找\(因此要求有序\)，时间复杂度为**O\(logn\)**
     .
 
 #### 对比 PriorityQueue\(Heap\)
@@ -219,6 +90,4 @@ TreeSet / TreeMap 是底层运用了[红黑树](https://zh.wikipedia.org/wiki/%E
 #### 练习
 
 [http://www.lintcode.com/problem/consistent-hashing-ii/](http://www.lintcode.com/problem/consistent-hashing-ii/)
-
-
 
