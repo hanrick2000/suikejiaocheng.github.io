@@ -93,4 +93,5 @@
     * [非递归的方式实现二叉树遍历](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/fei-di-gui-de-fang-shi-shi-xian-er-cha-shu-bian-li.md)
     * [BST 的增删查改](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai.md)
       * [平衡排序二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai/ping-heng-pai-xu-er-cha-shu.md)
+        * [练习：链表转平衡排序二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai/ping-heng-pai-xu-er-cha-shu/lian-xi-ff1a-lian-biao-zhuan-ping-heng-pai-xu-er-cha-shu.md)
 
