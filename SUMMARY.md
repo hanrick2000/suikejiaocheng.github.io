@@ -98,5 +98,6 @@
   * [全子集问题](chapter-6/quan-zi-ji-wen-ti.md)
     * [最简单的递归方式](chapter-6/quan-zi-ji-wen-ti/zui-jian-dan-de-di-gui-fang-shi.md)
     * [可以拓展到排列类搜索的递归方式](chapter-6/quan-zi-ji-wen-ti/ke-yi-tuo-zhan-dao-pai-lie-lei-sou-suo-de-di-gui-fang-shi.md)
+    * [全子集 Follow up I: 如何去重](chapter-6/quan-zi-ji-wen-ti/quan-zi-ji-follow-up-i-ru-he-qu-zhong.md)
 * [Chapter 7 Data structure](chapter-7.md)
 
