@@ -95,5 +95,6 @@
       * [平衡排序二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai/ping-heng-pai-xu-er-cha-shu.md)
         * [练习：链表转平衡排序二叉树](chapter-5-binary-tree-based-dfs/di-wu-zhang-ke-hou-bu-chong-nei-rong/bst-de-zeng-shan-cha-gai/ping-heng-pai-xu-er-cha-shu/lian-xi-ff1a-lian-biao-zhuan-ping-heng-pai-xu-er-cha-shu.md)
 * [Chapter 6 DFS](chapter-6.md)
+  * [全子集问题](chapter-6/quan-zi-ji-wen-ti.md)
 * [Chapter 7 Data structure](chapter-7.md)
 
