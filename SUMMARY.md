@@ -111,4 +111,5 @@
 * [Chapter 7 Data structure](chapter-7.md)
   * [栈 Stack](chapter-7/zhan-stack.md)
     * [如何实现一个栈？](chapter-7/zhan-stack/ru-he-shi-xian-yi-ge-zhan-ff1f.md)
+    * [如何用两个队列实现一个栈？](chapter-7/zhan-stack/ru-he-yong-liang-ge-dui-lie-shi-xian-yi-ge-zhan-ff1f.md)
 
