@@ -66,7 +66,15 @@ def searchBST(root, val):
 Python:
 
 ```py
-
+def updateBSTBST(root, target, val):
+    if not root:
+        return  # 未找到target节点
+    if target < root.val:
+        updateBST(root.left, target, val) # target小于根节点值，在左子树中查找哦
+    elif target > root.val:
+        updateBST(root.right, target, val) # target大于根节点值，在右子树中查找
+    else:  # 找到了
+        root.val = val
 ```
 
 * 实战
@@ -86,29 +94,14 @@ Python:
 Python:
 
 ```
-def
-insertNode
-(root, node)
-:
-if
-not
- root:
-
-return
- node
-
-if
- root.val 
->
- node.val:
+def insertNode(root, node):
+    if not root:
+        return node
+    if root.val > node.val:
         root.left = insertNode(root.left, node)
-
-else
-:
+    else:
         root.right = insertNode(root.right, node)
-
-return
- root
+    return root
 ```
 
 * 实战
