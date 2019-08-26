@@ -40,7 +40,7 @@ class Solution:
         return result + 1
 ```
 
-**Q：为了找寻每个元素右侧有多少元素比自己小，用了 **$$O(n^2)$$$$$$**的时间，能不能更快些？**  
+**Q：为了找寻每个元素右侧有多少元素比自己小，用了 **$$O(n^2)$$$$**的时间，能不能更快些？**  
 A：可以做到$$O\(nlogn\)$$！但是很复杂，这是另外一个问题了，可以使用BST，归并排序或者线段树，详见[http://www.lintcode.com/zh-cn/problem/count-of-smaller-number-before-itself/](http://www.lintcode.com/zh-cn/problem/count-of-smaller-number-before-itself/)
 
 **Q：元素有重复怎么办？**  
