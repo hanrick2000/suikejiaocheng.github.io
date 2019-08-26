@@ -37,5 +37,49 @@ class Solution:
         return result
 ```
 
+### 基于 BFS 的方法
+
+在 BFS 那节课的讲解中，我们很少提到用 BFS 来解决找所有的方案的问题。事实上 BFS 也是可以用来做这件事情的。  
+用 BFS 来解决该问题时，层级关系如下：
+
+```
+第一层: []
+第二层: [1] [2] [3]
+第三层: [1, 2] [1, 3], [2, 3]
+第四层: [1, 2, 3]
+```
+
+每一层的节点都是上一层的节点拓展而来。
+
+参考代码如下：  
+Python:
+
+```py
+lass Solution:
+    def subsets(self, nums):
+        results = []
+
+        if not nums:
+            return results
+
+        nums.sort()
+
+        # BFS
+        queue = deque()
+        queue.append([])
+
+        while queue:
+            subset = queue.popleft()
+            results.append(subset)
+
+            for i in range(len(nums)):
+                if not subset or subset[-1] < nums[i]:
+                    nextSubset = list(subset)
+                    nextSubset.append(nums[i])
+                    queue.append(nextSubset)
+
+        return results
+```
+
 
 
