@@ -103,5 +103,6 @@
     * [普通的全排列问题](chapter-6/quan-pai-lie-wen-ti/pu-tong-de-quan-pai-lie-wen-ti.md)
     * [有重复数的全排列问题](chapter-6/quan-pai-lie-wen-ti/you-zhong-fu-shu-de-quan-pai-lie-wen-ti.md)
     * [如何实现非递归版本的全排列问题？](chapter-6/quan-pai-lie-wen-ti/ru-he-shi-xian-fei-di-gui-ban-ben-de-quan-pai-lie-wen-ti-ff1f.md)
+  * [什么是 Deep Copy？](chapter-6/shi-yao-shi-deep-copy.md)
 * [Chapter 7 Data structure](chapter-7.md)
 
