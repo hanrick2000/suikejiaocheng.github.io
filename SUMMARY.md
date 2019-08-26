@@ -106,5 +106,6 @@
   * [什么是 Deep Copy？](chapter-6/shi-yao-shi-deep-copy.md)
   * [课后补充内容](chapter-6/ke-hou-bu-chong-nei-rong.md)
     * [全子集 Follow up II: 如何非递归？](chapter-6/ke-hou-bu-chong-nei-rong/quan-zi-ji-follow-up-ii-ru-he-fei-di-gui-ff1f.md)
+    * [如何求一个排列是第几个排列？](chapter-6/ke-hou-bu-chong-nei-rong/ru-he-qiu-yi-ge-pai-lie-shi-di-ji-ge-pai-lie-ff1f.md)
 * [Chapter 7 Data structure](chapter-7.md)
 
