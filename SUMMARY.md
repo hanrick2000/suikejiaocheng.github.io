@@ -109,4 +109,6 @@
     * [如何求一个排列是第几个排列？](chapter-6/ke-hou-bu-chong-nei-rong/ru-he-qiu-yi-ge-pai-lie-shi-di-ji-ge-pai-lie-ff1f.md)
     * [如何求下一个排列](chapter-6/ke-hou-bu-chong-nei-rong/ru-he-qiu-xia-yi-ge-pai-lie.md)
 * [Chapter 7 Data structure](chapter-7.md)
+  * [栈 Stack](chapter-7/zhan-stack.md)
+    * [如何实现一个栈？](chapter-7/zhan-stack/ru-he-shi-xian-yi-ge-zhan-ff1f.md)
 
