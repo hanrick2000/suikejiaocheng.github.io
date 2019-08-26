@@ -2,7 +2,7 @@
 
 ## 什么是二叉搜索树\(Binary Search Tree\)
 
-**二叉搜索树**可以是一棵空树或者是一棵满足下列条件的[二叉树](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91):
+**二叉搜索树**可以是一棵空树或者是一棵满足下列条件的[二叉树](https://zh.wikipedia.org/wiki/二叉树):
 
 * 如果它的左子树不空，则左子树上所有节点值`均小于`它的根节点值。
 * 如果它的右子树不空，则右子树上所有节点值`均大于`它的根节点值。
@@ -19,7 +19,10 @@
 Python:
 
 ```py
-
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
 ```
 
 #### 基本操作之查找\(Retrieve\)
@@ -82,23 +85,22 @@ insertNode
 if
 not
  root:
-        
+
 return
  node
-    
+
 if
  root.val 
 >
  node.val:
         root.left = insertNode(root.left, node)
-    
+
 else
 :
         root.right = insertNode(root.right, node)
-    
+
 return
  root
-
 ```
 
 * 实战
@@ -115,8 +117,6 @@ return
     [http://www.algolist.net/Data\_structures/Binary\_search\_tree/Removal](http://www.algolist.net/Data_structures/Binary_search_tree/Removal)
 
 * 代码实现
-
-
 
 Python:
 
@@ -138,20 +138,20 @@ if
 and
  parent.left.val == value:
         node = parent.left
-    
+
 elif
  parent.right 
 and
  parent.right.val == value:
         node = parent.right
-    
+
 else
 :
-        
+
 return
  dummy.left
     deleteNode(parent, node)
-    
+
 return
  dummy.left
 
@@ -163,27 +163,27 @@ findNode
 if
 not
  node:
-        
+
 return
  parent
-    
+
 if
  node.val == value:
-        
+
 return
  parent
-    
+
 if
  value 
 <
  node.val:
-        
+
 return
  findNode(node,node.left, value)
-    
+
 else
 :
-        
+
 return
  findNode(node, node.right, value)
 
@@ -195,43 +195,42 @@ deleteNode
 if
 not
  node.right:
-        
+
 if
  parent.left == node:
             parent.left = node.left
-        
+
 else
 :
             parent.right = node.left
-    
+
 else
 :
         temp = node.right
         father = node
-        
+
 while
  temp.left:
             father = temp
             temp = temp.left
-        
+
 if
  father.left == temp:
             father.left = temp.right
-        
+
 else
 :
             father.right = temp.right
-        
+
 if
  parent.left == node:
             parent.left = temp
-        
+
 else
 :
             parent.right = temp
         temp.left = node.left
         temp.right = node.right
-
 ```
 
 * 实战
