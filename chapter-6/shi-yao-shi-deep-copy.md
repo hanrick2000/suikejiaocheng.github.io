@@ -59,15 +59,14 @@ def main():
     # 此时subset就是[1]了
 ```
 
-可能你会奇怪，不是说修改参数不会影响到函数之外的参数么？也就是：  
-
+可能你会奇怪，不是说修改参数不会影响到函数之外的参数么？也就是：
 
 Python:
 
 ```py
 def func(x):
     x = x+1
-		
+
 def main():
     int x = 0
     func(x)
@@ -78,31 +77,16 @@ def main():
 
 Python:
 
-```
-def
-func
-(subset)
-:
-
+```py
+def func(subset):
     subset = list(subset)
-    subset.append(
-1
-)
+    subset.append(1)
 
-
-def
-main
-()
-:
-
+def main():
     subset = []
-
-# 此时 subset 是 []
-
+    # 此时 subset 是 []
     func(subset)
-
-# 此时 subset 还是 []
-
+    # 此时 subset 还是 []
 }
 ```
 
