@@ -44,182 +44,37 @@ subset.append(3)  # 此时results里是[[1,2,3], [1,2,3]]
 
 #### 参数中引用传递
 
-来看这段代码  
-Java:
-
-```
-public
-void
-func
-(List
-<
-Integer
->
- subset)
-{
-    subset.add(
-1
-);
-}
-
-public
-void
-main
-()
-{
-    List
-<
-Integer
->
- subset = 
-new
- ArrayList
-<
->
-();
-
-// 此时 subset 是 []
-
-    func(subset);
-
-// 此时 subset 就是 [1] 了
-
-}
-```
+来看这段代码
 
 Python:
 
-```
-def
-func
-(subset)
-:
-# subset is a list
+```py
+def func(subset):  # subset is a list
+    subset.append(1)
 
-    subset.append(
-1
-)
-
-
-def
-main
-()
-:
-
+def main():
     subset = []
-
-# 此时subset是[]
-
+    # 此时subset是[]
     func(subset)
-
-# 此时subset就是[1]了
+    # 此时subset就是[1]了
 ```
 
 可能你会奇怪，不是说修改参数不会影响到函数之外的参数么？也就是：  
-Java:
 
-```
-public
-void
-func
-(
-int
- x)
-{
-    x = x + 
-1
-;
-}
-
-public
-void
-main
-()
-{
-
-int
- x = 
-0
-;
-    func(x);
-
-// 此时 x 仍然是 0
-
-}
-```
 
 Python:
 
-```
-def
-func
-(x)
-:
-
-    x = x+
-1
-def
-main
-()
-:
-
-    int x = 
-0
-
+```py
+def func(x):
+    x = x+1
+		
+def main():
+    int x = 0
     func(x)
-
-# 此时x仍然是0
+    # 此时x仍然是0
 ```
 
-上面两者的区别在于，人们习惯性的认为`subset.add`和`x = x + 1`都是对参数进行了`修改`。而事实上，x = x + 1 确实是对参数进行了修改，这个修改只在函数func的局部有效，出了func回到main就失效了。而 subset.add 并没有修改 subset 这个参数本身，而只是在 subset 所指向的内存空间中增加了一个新的元素，这个操作是永久性的，不是临时的，是全局有效的，不是局部有效的。那么怎么样才是对 subset 这个参数进行了修改呢？比如：  
-Java:
-
-```
-public
-void
-func
-(List
-<
-Integer
->
- subset)
-{
-    subset = 
-new
- ArrayList
-<
-Integer
->
-();
-    subset.add(
-1
-);
-}
-
-public
-void
-main
-()
-{
-    List
-<
-Integer
->
- subset = 
-new
- ArrayList
-<
->
-();
-
-// 此时 subset 是 []
-
-    func(subset);
-
-// 此时 subset 还是 []
-
-}
-```
+上面两者的区别在于，人们习惯性的认为`subset.add`和`x = x + 1`都是对参数进行了`修改`。而事实上，x = x + 1 确实是对参数进行了修改，这个修改只在函数func的局部有效，出了func回到main就失效了。而 subset.add 并没有修改 subset 这个参数本身，而只是在 subset 所指向的内存空间中增加了一个新的元素，这个操作是永久性的，不是临时的，是全局有效的，不是局部有效的。那么怎么样才是对 subset 这个参数进行了修改呢？比如：
 
 Python:
 
