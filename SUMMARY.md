@@ -126,4 +126,5 @@
     * [重哈希 Rehashing](chapter-7/ha-xi-biao-hash/zhong-haxi-rehashing.md)
   * [堆 Heap](chapter-7/dui-heap.md)
     * [Heap 的结构和原理](chapter-7/dui-heap/heap-de-jie-gou-he-yuan-li.md)
+    * [堆化 Heapify](chapter-7/dui-heap/dui-hua-heapify.md)
 
