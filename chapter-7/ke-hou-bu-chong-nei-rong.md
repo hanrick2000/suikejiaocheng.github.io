@@ -36,5 +36,5 @@ Java当中，红黑树主要是`TreeSet`，位于`java.util.TreeSet`，继承自
 
 在C++当中，红黑树即是默认的`set`和`map`，其元素也是有序的。  
 而通过哈系表实现的则分别是`unordered_set`和`unordered_map`，注意这两种结构是在`C++11`才有的。  
-在Python当中，默认的set和dict是用哈系表实现，没有默认的红黑树。如果你想使用红黑树的话，可以使用`rbtree`这个模块，下载地址：[https://pypi.python.org/pypi/rbtree/0.9.0](https://pypi.python.org/pypi/rbtree/0.9.0)
+在Python当中，默认的set和dict是用哈希表实现，没有默认的红黑树。如果你想使用红黑树的话，可以使用`rbtree`这个模块，下载地址：[https://pypi.python.org/pypi/rbtree/0.9.0](https://pypi.python.org/pypi/rbtree/0.9.0)
 
