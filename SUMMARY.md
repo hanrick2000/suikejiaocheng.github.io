@@ -121,4 +121,5 @@
     * [哈希表的基本原理](chapter-7/ha-xi-biao-hash/ha-xi-biao-de-ji-ben-yuan-li.md)
     * [哈希函数 Hash Function](chapter-7/ha-xi-biao-hash/ha-xi-han-shu-hash-function.md)
     * [冲突的解决办法](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa.md)
+      * [开哈希 Open Hashing](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa/kai-ha-xi-open-hashing.md)
 
