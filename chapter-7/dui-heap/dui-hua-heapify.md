@@ -39,3 +39,47 @@ class Solution:
 
 因此总的时间复杂度是$$O(nlogn)$$
 
+
+
+### 基于 Siftdown 的版本O\(n\)
+
+Python版本：
+
+```py
+import sys
+import collections
+class Solution:
+    # @param A: Given an integer array
+    # @return: void
+    def siftdown(self, A, k):
+        while k * 2 + 1 < len(A):
+            son = k * 2 + 1    #A[i]左儿子的下标
+            if k * 2 + 2 < len(A) and A[son] > A[k * 2 + 2]:
+                son = k * 2 + 2    #选择两个儿子中较小的一个
+            if A[son] >= A[k]:
+                break
+                
+            temp = A[son]
+            A[son] = A[k]
+            A[k] = temp
+            k = son
+    
+    def heapify(self, A):
+        for i in range(len(A) - 1, -1, -1):
+            self.siftdown(A, i)
+
+
+```
+
+算法思路：
+
+1. 初始选择最接近叶子的一个父结点，与其两个儿子中较小的一个比较，若大于儿子，则与儿子交换。
+2. 交换后再与新的儿子比较并交换，直至没有儿子。
+3. 再选择较浅深度的父亲结点，重复上述步骤。
+
+#### 时间复杂度分析
+
+这个版本的算法，乍一看也是$$O(nlogn)$$， 但是我们仔细分析一下，算法从第 n/2 个数开始，倒过来进行 siftdown。也就是说，相当于从 heap 的倒数第二层开始进行 siftdown 操作，倒数第二层的节点大约有 n/4 个， 这 n/4 个数，最多 siftdown 1次就到底了，所以这一层的时间复杂度耗费是$$O(n/4)$$，然后倒数第三层差不多 n/8 个点，最多 siftdown 2次就到底了。所以这里的耗费是 O\(n/8 \* 2\), 倒数第4层是 O\(n/16 \* 3\)，倒数第5层是 O\(n/32 \* 4\) ... 因此累加所有的时间复杂度耗费为：
+
+
+
