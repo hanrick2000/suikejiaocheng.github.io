@@ -13,5 +13,41 @@
 4. 当我们需要删除队头元素时，只需要将dummy.next变为dummy.next.next，这样就删掉了第一个元素，这里需要注意的是，如果删掉的是队列中唯一的一个元素，那么需要将tail重新与dummy节点重合
 5. 当我们需要得到队头元素而不删除这个元素时，只需要获得dummy.next.val就可以了 
 
+#### 示例代码
+
+Python:
+
+```py
+class QueueNode:
+    def __init__(self, value):
+        self.val = value
+        self.next = None
+
+
+class Queue:
+    def __init__(self):
+        self.dummy = QueueNode(-1)
+        self.tail = self.dummy
+
+    def enqueue(self, val):
+        node = QueueNode(val)
+        self.tail.next = node
+        self.tail = node
+
+    def dequeue(self):
+        ele = self.dummy.next.val
+        self.dummy.next = self.dummy.next.next
+
+        if not self.dummy.next:
+            self.tail = self.dummy
+        return ele
+
+    def peek(self):
+        return self.dummy.next.val
+
+    def isEmpty(self):
+        return self.dummy.next == None
+```
+
 
 
