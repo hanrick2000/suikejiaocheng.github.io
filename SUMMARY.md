@@ -117,4 +117,6 @@
     * [如何用链表实现队列](chapter-7/takeh-home/ru-he-yong-lian-biao-shi-xian-dui-lie.md)
     * [如何用两个栈实现队列](chapter-7/takeh-home/ru-he-yong-liang-ge-zhan-shi-xian-dui-lie.md)
     * [什么是循环数组，如何用循环数组实现队列？](chapter-7/takeh-home/shi-yao-shi-xun-huan-shu-zu-ff0c-ru-he-yong-xun-huan-shu-zu-shi-xian-dui-lie-ff1f.md)
+  * [哈希表 Hash](chapter-7/ha-xi-biao-hash.md)
+    * [哈希表的基本原理](chapter-7/ha-xi-biao-hash/ha-xi-biao-de-ji-ben-yuan-li.md)
 
