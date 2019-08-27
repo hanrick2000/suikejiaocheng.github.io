@@ -123,4 +123,5 @@
     * [冲突的解决办法](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa.md)
       * [开哈希 Open Hashing](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa/kai-ha-xi-open-hashing.md)
       * [闭哈希 Closed Hashing](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa/bi-ha-xi-closed-hashing.md)
+    * [重哈希 Rehashing](chapter-7/ha-xi-biao-hash/zhong-haxi-rehashing.md)
 
