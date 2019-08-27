@@ -5,6 +5,7 @@
     * [KMP算法的替代品：Rabin Karp](di-yi-zhang-ke-hou-bu-chong-nei-rong/kmpsuan-fa-de-ti-dai-pin-ff1a-rabin-karp.md)
     * [最长回文子串标准算法 Manacher's Algorithm](di-yi-zhang-ke-hou-bu-chong-nei-rong/zui-chang-hui-wen-zi-chuan-biao-zhun-suan-fa-manacher-s-algorithm.md)
     * [简单位运算操作](di-yi-zhang-ke-hou-bu-chong-nei-rong/jian-dan-wei-yun-suan-cao-zuo.md)
+    * [子数组与前缀和](di-yi-zhang-ke-hou-bu-chong-nei-rong/zi-shu-zu-yu-qian-zhui-he.md)
 * [Chapter 2 Binary Search ](chapter-3-binary-search.md)
   * [算法复杂度理论](chapter-3-binary-search/suan-fa-fu-za-du-li-lun.md)
     * [时间复杂度](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/shi-jian-fu-za-du.md)
