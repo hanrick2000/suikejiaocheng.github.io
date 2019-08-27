@@ -124,4 +124,6 @@
       * [开哈希 Open Hashing](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa/kai-ha-xi-open-hashing.md)
       * [闭哈希 Closed Hashing](chapter-7/ha-xi-biao-hash/chong-tu-de-jie-jue-ban-fa/bi-ha-xi-closed-hashing.md)
     * [重哈希 Rehashing](chapter-7/ha-xi-biao-hash/zhong-haxi-rehashing.md)
+  * [堆 Heap](chapter-7/dui-heap.md)
+    * [Heap 的结构和原理](chapter-7/dui-heap/heap-de-jie-gou-he-yuan-li.md)
 
