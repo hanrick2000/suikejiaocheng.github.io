@@ -130,4 +130,5 @@
   * [课后补充内容](chapter-7/ke-hou-bu-chong-nei-rong.md)
     * 红黑树 Red-black Tree
     * [Merge K Sorted Lists 多路归并算法的三种实现方式](chapter-7/ke-hou-bu-chong-nei-rong/merge-k-sorted-lists-duo-lu-gui-bing-suan-fa-de-san-zhong-shi-xian-fang-shi.md)
+    * [外排序与K路归并算法](chapter-7/ke-hou-bu-chong-nei-rong/wai-pai-xu-yu-k-lu-gui-bing-suan-fa.md)
 
