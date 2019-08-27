@@ -113,4 +113,5 @@
     * [如何实现一个栈？](chapter-7/zhan-stack/ru-he-shi-xian-yi-ge-zhan-ff1f.md)
     * [如何用两个队列实现一个栈？](chapter-7/zhan-stack/ru-he-yong-liang-ge-dui-lie-shi-xian-yi-ge-zhan-ff1f.md)
     * [如何用一个数组实现三个栈？](chapter-7/zhan-stack/ru-he-yong-yi-ge-shu-zu-shi-xian-san-ge-zhan-ff1f.md)
+  * [队列 Queue](chapter-7/takeh-home.md)
 
