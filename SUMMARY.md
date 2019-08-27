@@ -1,6 +1,8 @@
 # Summary
 
-* [Introduction](README.md)
+* [Chapter 1 Introduction](README.md)
+  * [第一章课后补充内容](di-yi-zhang-ke-hou-bu-chong-nei-rong.md)
+    * [KMP算法的替代品：Rabin Karp](di-yi-zhang-ke-hou-bu-chong-nei-rong/kmpsuan-fa-de-ti-dai-pin-ff1a-rabin-karp.md)
 * [Chapter 2 Binary Search ](chapter-3-binary-search.md)
   * [算法复杂度理论](chapter-3-binary-search/suan-fa-fu-za-du-li-lun.md)
     * [时间复杂度](chapter-3-binary-search/suan-fa-fu-za-du-li-lun/shi-jian-fu-za-du.md)
