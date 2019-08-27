@@ -11,7 +11,6 @@
 将A和B的二进制表示的每一位进行与操作，只有两个对应的二进制位都为1时，结果位才为1，否则为0。
 
 ```
-
 1 & 1 = 1
 1 & 0 = 0
 0 & 1 = 0
@@ -27,22 +26,13 @@ A & B =`10 & 44`=`001010 & 101100`=`(001000)2`=`(8)10`
 具体的Java程序如下：
 
 ```
-int
- a = 
-10
-&
-44
-; 
-// a的值是8
+int a = 10 & 44; // a的值是8
 ```
 
 Python版本类似:
 
 ```
-a = 
-10
-&
-44
+a = 10 & 44
 ```
 
 ### 按位与相关题目
@@ -55,51 +45,16 @@ a =
 用1不断左移（左移操作可参见下文**其他操作**，每次和num做**按位与**看是否为0，不是0的话说明这一位是1。左移32次后停止。代码如下：  
 Java:
 
-```
-public
-class
-Solution
-{
-    
-public
-int
-countOnes
-(
-int
- num)
-{
-        
-int
- count = 
-0
-;
-        
-for
-(
-int
- i = 
-0
- ; i 
-<
-32
-; i++) {
-            
-if
-((num 
-&
- (
-1
-<
-<
-i)) != 
-0
-) {
+```java
+public class Solution {
+    public int countOnes(int num) {
+        int count = 0;
+        for(int i = 0 ; i < 32; i++) {
+            if((num & (1<<i)) != 0) {
                 count++;
             }
         }
-        
-return
- count;
+        return count;
     }
 }
 
@@ -107,39 +62,14 @@ return
 
 Python:
 
-```
-class
-Solution
-:
-def
-countOnes
-(self, num)
-:
-
-        count = 
-0
-for
- i 
-in
- range(
-32
-):
-            
-if
- (num 
-&
- (
-1
-<
-<
- i)) != 
-0
-:
-                count += 
-1
-return
- count
-
+```py
+class Solution:
+    def countOnes(self, num):
+        count = 0
+        for i in range(32):
+            if (num & (1 << i)) != 0:
+                count += 1
+        return count
 ```
 
 **Q：这方法有啥问题没有？**  
@@ -150,94 +80,38 @@ return
 不断用num和num-1做按位与，结果直接赋给num。只要num不为0，就重复该过程。最后返回以上过程的次数即可。代码如下：  
 Java:
 
-```
-public
-class
-Solution
-{
-    
-public
-int
-countOnes
-(
-int
- num)
-{
-        
-int
- count = 
-0
-;
-        
-while
- (num != 
-0
-) {
-            num 
-&
-= num - 
-1
-;
+```java
+public class Solution {
+    public int countOnes(int num) {
+        int count = 0;
+        while (num != 0) {
+            num &= num - 1;
             count++;
         }
-        
-return
- count;
+        return count;
     }
 }
-
 ```
 
 Python:
 
-```
-class
-Solution
-:
-def
-countOnes
-(self, num)
-:
-if
- num 
-<
-0
-:
-            
-# Python的整数是无限长的, -1在Java/C++的32位整数中为: 11...11111 (32个1)
-# 但是在Python中为: ...1111111111111 (无限个1)
-# 因此在遇到负数时要先截断为32位
-
-            num 
-&
-= (
-1
-<
-<
-32
-)
--1
-
-        count = 
-0
-while
- num != 
-0
-:
-            num 
-&
-= num - 
-1
-
-            count += 
-1
-return
- count
-
+```py
+class Solution:
+    def countOnes(self, num):
+        if num < 0:
+            # Python的整数是无限长的, -1在Java/C++的32位整数中为: 11...11111 (32个1)
+            # 但是在Python中为: ...1111111111111 (无限个1)
+            # 因此在遇到负数时要先截断为32位
+            num &= (1 << 32)-1
+        count = 0
+        while num != 0:
+            num &= num - 1
+            count += 1
+        return count
 ```
 
 **Q：这为啥可以？**  
-**A**：其实原理很简单，先说结论：**每一次`num &= num - 1`会使得`num`最低位`1`变为`0`**。  
+**A**：其实原理很简单，先说结论：**每一次**`num &= num - 1`**会使得**`num`**最低位**`1`**变为**`0`。  
 例如12，二进制表示为`1100`，减1后的二进制表示为`1011`。注意到了吗，减1后，最低位1变成了0，而最低位1后面的0全变成了1，高位不变。这样和原数按位与后，就只有最低位1发生了变化。所以该过程循环了多少次，就说明抹掉了多少个1。这对于其余正整数也是适用的。
 
 但是要注意的是，Python中的整数是无限长的，负数的二进制表示中会有无限个前导1，因此要先将负数截断至32位。
