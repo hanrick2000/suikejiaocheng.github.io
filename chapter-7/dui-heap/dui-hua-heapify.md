@@ -20,7 +20,7 @@ class Solution:
             temp = A[k]
             A[k] = A[father]
             A[father] = temp
-            
+
             k = father
     def heapify(self, A):
         for i in range(len(A)):
@@ -34,17 +34,8 @@ class Solution:
 
 #### 时间复杂度分析
 
-1. 对于每个元素都要遍历一遍，这部分是O\(n\)。
-2. 每处理一个元素时，最多需要向根部方向交换
-   logn
-   l
-   o
-   g
-   n
-   次。
+1. 对于每个元素都要遍历一遍，这部分是$$O(n)$$。
+2. 每处理一个元素时，最多需要向根部方向交换$$logn$$次。
 
 因此总的时间复杂度是O\(nlogn\)O\(nlogn\)
-
-  
-
 
