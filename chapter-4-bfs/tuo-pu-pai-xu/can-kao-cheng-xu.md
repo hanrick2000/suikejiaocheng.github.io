@@ -4,7 +4,6 @@
 
 这是 LintCode 上的题目：[Topological Sorting](http://www.lintcode.com/problem/topological-sorting/)
 
-  
 参考程序
 
 ```java
@@ -56,9 +55,92 @@ public class Solution {
 }
 ```
 
+
+
+```py
+#BFS
+"""
+Definition for a Directed graph node
+class DirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+"""
+
+class Solution:
+    """
+    @param graph: A list of Directed graph node
+    @return: Any topological order for the given graph.
+    """
+    def topSort(self, graph):
+        node_to_indegree = self.get_indegree(graph)
+
+        # bfs
+        order = []
+        start_nodes = [n for n in graph if node_to_indegree[n] == 0]
+        queue = collections.deque(start_nodes)
+        while queue:
+            node = queue.popleft()
+            order.append(node)
+            for neighbor in node.neighbors:
+                node_to_indegree[neighbor] -= 1
+                if node_to_indegree[neighbor] == 0:
+                    queue.append(neighbor)
+                
+        return order
+    
+    def get_indegree(self, graph):
+        node_to_indegree = {x: 0 for x in graph}
+
+        for node in graph:
+            for neighbor in node.neighbors:
+                node_to_indegree[neighbor] += 1
+                
+        return node_to_indegree
+```
+
+
+
+```py
+#DFS (不推荐面试使用)
+"""
+Definition for a Directed graph node
+class DirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+"""
+
+class Solution:
+    """
+    @param graph: A list of Directed graph node
+    @return: Any topological order for the given graph.
+    """
+    def topSort(self, graph):
+        indegree = {}
+        for x in graph:
+            indegree[x] = 0
+
+        for i in graph:
+            for j in i.neighbors:
+                indegree[j] += 1
+
+        ans = []
+        for i in graph:
+            if indegree[i] == 0:
+                self.dfs(i, indegree, ans)
+        return ans
+    
+    def dfs(self, i, indegree, ans):
+        ans.append(i)
+        indegree[i] -= 1
+        for j in i.neighbors:
+            indegree[j] -= 1
+            if indegree[j] == 0:
+                self.dfs(j, indegree, ans)
+```
+
 其他语言的参考程序请见：
 
 [http://www.jiuzhang.com/solutions/topological-sorting/](http://www.jiuzhang.com/solutions/topological-sorting/)
-
-
 
