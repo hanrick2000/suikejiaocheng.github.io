@@ -55,8 +55,6 @@ public class Solution {
 }
 ```
 
-
-
 ```py
 #BFS
 """
@@ -86,20 +84,18 @@ class Solution:
                 node_to_indegree[neighbor] -= 1
                 if node_to_indegree[neighbor] == 0:
                     queue.append(neighbor)
-                
+
         return order
-    
+
     def get_indegree(self, graph):
         node_to_indegree = {x: 0 for x in graph}
 
         for node in graph:
             for neighbor in node.neighbors:
                 node_to_indegree[neighbor] += 1
-                
+
         return node_to_indegree
 ```
-
-
 
 ```py
 #DFS (不推荐面试使用)
@@ -130,7 +126,7 @@ class Solution:
             if indegree[i] == 0:
                 self.dfs(i, indegree, ans)
         return ans
-    
+
     def dfs(self, i, indegree, ans):
         ans.append(i)
         indegree[i] -= 1
