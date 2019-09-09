@@ -36,6 +36,14 @@ def traverse(root, result):
 
 [相关练习](http://www.lintcode.com/problem/binary-tree-preorder-traversal/)及[完整答案](http://www.jiuzhang.com/solution/binary-tree-preorder-traversal/)。
 
+
+
+#### 中序遍历（又叫中根遍历）
+
+首先遍历左子树，然后访问根结点，最后遍历右子树。**遍历左、右子树时，仍按中序遍历**。若二叉树为空则返回。简记为**左根右**。  
+上图中序遍历结果是：**DBEAFC**。  
+核心代码：
+
 Python:
 
 ```py
