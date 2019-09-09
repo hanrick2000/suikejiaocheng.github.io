@@ -21,7 +21,10 @@
 Python:
 
 ```py
-
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
 ```
 
 #### 常用的实现办法
@@ -38,28 +41,41 @@ TreeSet / TreeMap 是底层运用了[红黑树](https://zh.wikipedia.org/wiki/�
 * HashSet / HashMap 存取的时间复杂度为**O\(1\)**,而 TreeSet / TreeMap 存取的时间复杂度为**O\(logn\)**所以在存取上并不占优。
 * HashSet / HashMap 内元素是无序的，而TreeSet / TreeMap 内部是有序的\(可以是按自然顺序排列也可以自定义排序\)。
 * TreeSet / TreeMap 还提供了类似[lowerBound](http://www.cplusplus.com/reference/algorithm/lower_bound/)和[upperBound](http://www.cplusplus.com/reference/algorithm/upper_bound/)这两个其他数据结构没有的方法
+
   * 对于 TreeSet, 实现上述两个方法的方法为：
+
     * **lowerBound**
+
       * **public E lower\(E e\)--**&gt;返回set中**严格小于**给出元素的**最大元素**，如果没有满足条件的元素则返回**null**。
 
       * **public E floor\(E e\)--**&gt;返回set中**不大于**给出元素的**最大元素**，如果没有满足条件的元素则返回**null**。
+
     * **upperBound**
+
       * **public E higher\(E e\)--**&gt; 返回set中**严格大于**给出元素的**最小元素**，如果没有满足条件的元素则返回**null**。
 
       * **public E ceiling\(E e\)--**&gt;返回set中**不小于**给出元素的**最小元素**，如果没有满足条件的元素则返回**null**。
+
   * 对于 TreeMap, 实现上述两个方法的方法为：
+
     * **lowerBound**
+
       * **public Map.Entry&lt;K,V&gt; lowerEntry\(K key\)--**&gt; 返回map中**严格小于**给出的key值的**最大key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
       * **public K lowerKey\(K key\)--**&gt; 返回map中**严格小于**给出的key值的**最大key**，如果没有满足条件的key则返回**null**。
 
       * **public Map.Entry&lt;K,V&gt; floorEntry\(K key\)--**&gt; 返回map中**不大于**给出的key值的**最大key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
+
       * **public K floorKey\(K key\)--**&gt; 返回map中**不大于**给出的key值的**最大key**，如果没有满足条件的key则返回**null**。
+
     * **upperBound**
+
       * **public Map.Entry&lt;K,V&gt; higherEntry\(K key\)--**&gt; 返回map中**严格大于**给出的key值的**最小key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
       * **public K higherKey\(K key\)--**&gt; 返回map中**严格大于**给出的key值的**最小key**，如果没有满足条件的key则返回**null**。
 
       * **public Map.Entry&lt;K,V&gt; ceilingEntry\(K key\)--**&gt; 返回map中**不小于**给出的key值的**最小key**对应的**key-value对**，如果没有满足条件的key则返回**null**。
+
       * **public K ceilingKey\(K key\)--**&gt; 返回map中**不小于**给出的key值的**最小key**，如果没有满足条件的key则返回**null**。
+
   * lowerBound 与 upperBound 均为二分查找\(因此要求有序\)，时间复杂度为**O\(logn\)**
     .
 
