@@ -34,16 +34,11 @@
 BST是一种**重要**且**基本**的结构，其相关题目也十分经典，并延伸出很多算法。  
 在BST之上，有许多高级且有趣的变种,以解决各式各样的问题，例如:
 
-* 用于数据库或各语言标准库中索引的
-  [红黑树](https://baike.baidu.com/item/红黑树/2413209?fr=aladdin)
-* 提升二叉树性能底线的
-  [伸展树](https://baike.baidu.com/item/伸展树/7003945?fr=aladdin)
-* 优化红黑树的
-  [AA树](https://baike.baidu.com/item/AA树/9246960?fr=aladdin)
-* 随机插入的
-  [树堆](https://baike.baidu.com/item/Treap?fromtitle=树堆&fromid=4478083)
-* 机器学习kNN算法的高维快速搜索  
-  [k-d树](https://baike.baidu.com/item/kd-tree/2302515)
+* 用于数据库或各语言标准库中索引的[红黑树](https://baike.baidu.com/item/红黑树/2413209?fr=aladdin)
+* 提升二叉树性能底线的[伸展树](https://baike.baidu.com/item/伸展树/7003945?fr=aladdin)
+* 优化红黑树的[AA树](https://baike.baidu.com/item/AA树/9246960?fr=aladdin)
+* 随机插入的[树堆](https://baike.baidu.com/item/Treap?fromtitle=树堆&fromid=4478083)
+* 机器学习kNN算法的高维快速搜索[k-d树](https://baike.baidu.com/item/kd-tree/2302515)
 
   …………
 
