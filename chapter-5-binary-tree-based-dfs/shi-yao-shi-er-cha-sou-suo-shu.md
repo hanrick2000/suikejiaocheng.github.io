@@ -7,17 +7,11 @@
 （1）若左子树不空，则左子树上所有节点值均小于或等于它的根节点值；  
 （2）若右子树不空，则右子树上所有节点值均大于根节点值；  
 （3）左、右子树也为二叉搜索树；  
-如图即为BST：  
-![](http://media.jiuzhang.com/markdown/images/3/14/cdc97d0c-2723-11e8-9bba-0242ac110002.jpg "图片")
+如图即为BST：
 
 ### 
 
-如图即为BST：  
 ![](http://media.jiuzhang.com/markdown/images/3/14/cdc97d0c-2723-11e8-9bba-0242ac110002.jpg "图片")
-
-### BST 的特性
-
-### 
 
 ### 
 
