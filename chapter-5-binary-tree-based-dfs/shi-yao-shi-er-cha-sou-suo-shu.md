@@ -10,6 +10,17 @@
 如图即为BST：  
 ![](http://media.jiuzhang.com/markdown/images/3/14/cdc97d0c-2723-11e8-9bba-0242ac110002.jpg "图片")
 
+### 
+
+如图即为BST：  
+![](http://media.jiuzhang.com/markdown/images/3/14/cdc97d0c-2723-11e8-9bba-0242ac110002.jpg "图片")
+
+### BST 的特性
+
+### 
+
+### 
+
 ### BST 的特性
 
 * 按照[中序遍历](http://www.jiuzhang.com/tutorial/algorithm/405#)（inorder traversal）打印各节点，会得到**由小到大**的顺序。
