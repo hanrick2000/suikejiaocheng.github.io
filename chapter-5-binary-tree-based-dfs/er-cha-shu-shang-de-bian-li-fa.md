@@ -25,6 +25,20 @@
 Python:
 
 ```py
+# 将根作为root，空list作为result传入，即可得到整棵树的遍历结果
+def traverse(root, result):
+    if not root:
+        return
+    result.append(root.val)
+    traverse(root.left, result)
+    traverse(root.right, result)
+```
+
+[相关练习](http://www.lintcode.com/problem/binary-tree-preorder-traversal/)及[完整答案](http://www.jiuzhang.com/solution/binary-tree-preorder-traversal/)。
+
+Python:
+
+```py
 def traverse(root, result):
     if not root:
         return
